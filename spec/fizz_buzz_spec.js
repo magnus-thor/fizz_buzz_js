@@ -11,4 +11,7 @@ describe('fizz_buzz_spec', function() {
     expect(subject.number).toEqual(9);
   });
 
+  it('expect number 3 to equal fizz', function() {
+    expect(subject.number).toEqual('Fizz');
+  });
 }) // End of initial describe
