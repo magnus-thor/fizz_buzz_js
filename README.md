@@ -1,3 +1,7 @@
+[![Coverage Status](https://coveralls.io/repos/github/magnus-thor/fizz_buzz_js/badge.svg?branch=master)](https://coveralls.io/github/magnus-thor/fizz_buzz_js?branch=master)
+
+
+
 ## JS Test Boilerplate 0.1 (WIP)
 [![Build Status](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate.svg?branch=master)](https://travis-ci.org/CraftAcademy/karma-jquery-jasmine_boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/CraftAcademy/karma-jquery-jasmine_boilerplate/badge.svg?branch=master)](https://coveralls.io/github/CraftAcademy/karma-jquery-jasmine_boilerplate?branch=master)
