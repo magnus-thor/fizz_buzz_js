@@ -2,5 +2,4 @@
 
 function Fizz_buzz() {
 
-  };
 };
