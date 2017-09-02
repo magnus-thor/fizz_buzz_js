@@ -6,18 +6,22 @@ describe('Fizz_buzz_spec', function() {
   });
 
   it('will return 1', function() {
-    expect(subject.normal_game(1)).toEqual(1);
+    subject.normal_game(1)
+    expect(subject.to_screen).toEqual(1);
   });
 
   it('3 returns fizz', function() {
-    expect(subject.normal_game(3)).toEqual('Fizz');
+    subject.normal_game(3)
+    expect(subject.to_screen).toEqual('Fizz');
   });
 
   it('5 returns buzz', function() {
-    expect(subject.normal_game(5)).toEqual('Buzz');
+    subject.normal_game(5);
+    expect(subject.to_screen).toEqual('Buzz');
   });
 
   it('15 returns FizzBuzz', function() {
-    expect(subject.normal_game(15)).toEqual('FizzBuzz');
+    subject.normal_game(15);
+    expect(subject.to_screen).toEqual('FizzBuzz');
   });
 });
