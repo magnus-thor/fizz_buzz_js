@@ -2,12 +2,24 @@ function Fizz_buzz() {
 };
 
 
-Fizz_buzz.prototype.normal_game = function(num) {
-  return num;
-}
+  Fizz_buzz.prototype.zero_remainder = function(number, divisor) {
+      return ((number % divisor) === 0);
+  };
+
+  Fizz_buzz.prototype.normal_game = function(num) {
+    if (this.zero_remainder(num, 3)) {
+      return('Fizz');
+    }
+    else {
+      return(num);
+    }
+  };
 
 
-
+// Fizz_buzz.prototype.setMessage = function(message) {
+//     console.log("message: ", + message);
+//     return message;
+//   }
 
 
 
@@ -50,7 +62,3 @@ Fizz_buzz.prototype.normal_game = function(num) {
 //     }
 //   };
 //
-//     function setMessage (message) {
-//       console.log("message: ", + message);
-//       return message;
-//     }
