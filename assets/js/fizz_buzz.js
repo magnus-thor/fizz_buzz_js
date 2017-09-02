@@ -7,7 +7,13 @@ function Fizz_buzz() {
   };
 
   Fizz_buzz.prototype.normal_game = function(num) {
-    if (this.zero_remainder(num, 3)) {
+    if (this.zero_remainder(num, 15)) {
+      return('FizzBuzz');
+    }
+    else if (this.zero_remainder(num, 5)) {
+      return('Buzz');
+    }
+    else if (this.zero_remainder(num, 3)) {
       return('Fizz');
     }
     else {
