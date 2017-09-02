@@ -11,18 +11,18 @@ Fizz_buzz.prototype.zero_remainder = function(number, divisor) {
 };
 
 Fizz_buzz.prototype.normal_game = function(num) {
-  for (var i = 1; i <= num; i++) {
-    if (this.zero_remainder(i, 15)) {
+  // for (var i = 1; i <= num; i++) {
+    if (this.zero_remainder(num, 15)) {
       this.setMessage('FizzBuzz');
     }
-    else if (this.zero_remainder(i, 5)) {
+    else if (this.zero_remainder(num, 5)) {
       this.setMessage('Buzz');
     }
-    else if (this.zero_remainder(i, 3)) {
+    else if (this.zero_remainder(num, 3)) {
       this.setMessage('Fizz');
     }
     else {
-      this.setMessage(i);
+      this.setMessage(num);
     }
-  }
+  // }
 };
