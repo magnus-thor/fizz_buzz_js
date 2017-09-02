@@ -6,12 +6,12 @@ describe('Fizz_buzz_spec', function() {
   });
 
   it('will return 1', function() {
-    subject.normal_game(1)
+    subject.normal_game(1);
     expect(subject.to_screen).toEqual(1);
   });
 
   it('3 returns fizz', function() {
-    subject.normal_game(3)
+    subject.normal_game(3);
     expect(subject.to_screen).toEqual('Fizz');
   });
 
