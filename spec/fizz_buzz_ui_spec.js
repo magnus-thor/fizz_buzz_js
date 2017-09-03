@@ -30,18 +30,14 @@ describe('Fizz_Buzz_UI - index.html', function() {
   });
 
   it('runs Fizz_buzz(150) and receives FizzBuzz', function() {
-    $("#number").val(150);
+    $("#number").val(3);
     $("#run_fizz").trigger("click");
-    fizz.normal_game(150);
-    console.log(fizz.to_screen);
-    expect($('#display_buzz').text()).toBe('FizzBuzz');
+    expect($('#display_buzz').text()).toBe('Fizz');
   });
 
   it('runs Fizz_buzz(1) and receives 1', function() {
     $("#number").val(1);
     $("#run_fizz").trigger("click");
-    fizz.normal_game(1);
-    console.log(fizz.to_screen);
     expect($('#display_buzz').text()).toBe('1');
   });
 });
