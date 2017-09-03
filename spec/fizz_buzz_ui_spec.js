@@ -2,6 +2,10 @@ describe('Fizz_Buzz_UI - index.html', function() {
   let fizz;
   var spyEvent;
 
+  beforeAll(function(done) {
+    jasmine.DEFAULT_TIMEOUT_INTERVAL= 120000;
+    done();
+  });
   beforeEach(function() {
     jasmine.getFixtures().fixturesPath = 'base/spec/fixtures';
     loadFixtures('index.html');
@@ -29,15 +33,18 @@ describe('Fizz_Buzz_UI - index.html', function() {
     expect($('#display_buzz').text()).toBe('Please enter an Integer');
   });
 
-  it('runs Fizz_buzz(150) and receives FizzBuzz', function() {
-    $("#number").val(3);
-    $("#run_fizz").trigger("click");
-    expect($('#display_buzz').text()).toBe('Fizz');
-  });
-
   it('runs Fizz_buzz(1) and receives 1', function() {
     $("#number").val(1);
     $("#run_fizz").trigger("click");
+    jasmine.clock().tick(510);
     expect($('#display_buzz').text()).toBe('1');
   });
+
+  it('runs Fizz_buzz(3) and receives FizzBuzz', function() {
+    $("#number").val(3);
+    $("#run_fizz").trigger("click");
+    jasmine.clock().tick(1510);
+    expect($('#display_buzz').text()).toBe('Fizz');
+  });
+
 });
