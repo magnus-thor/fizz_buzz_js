@@ -6,6 +6,7 @@ describe('Fizz_Buzz_UI - index.html', function() {
     jasmine.DEFAULT_TIMEOUT_INTERVAL= 120000;
     done();
   });
+
   beforeEach(function() {
     jasmine.getFixtures().fixturesPath = 'base/spec/fixtures';
     loadFixtures('index.html');
@@ -46,5 +47,4 @@ describe('Fizz_Buzz_UI - index.html', function() {
     jasmine.clock().tick(1510);
     expect($('#display_buzz').text()).toBe('Fizz');
   });
-
 });
