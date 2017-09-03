@@ -12,7 +12,6 @@ Fizz_buzz.prototype.zero_remainder = function(number, divisor) {
 };
 
 Fizz_buzz.prototype.normal_game = function(num) {
-  // if (Number.isInteger(num)) {
     if (this.zero_remainder(num, 15)) {
       this.use_color = "blue";
       this.setMessage('FizzBuzz');
@@ -29,9 +28,4 @@ Fizz_buzz.prototype.normal_game = function(num) {
       this.use_color = "black";
       this.setMessage(num);
     }
-  // } else {
-  //   this.use_color = "black";
-  //   this.to_screen = "Please use Integers";
-    // break;
-  // }
 };
