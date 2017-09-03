@@ -1,7 +1,8 @@
 
 body{
-  background-color: #ffeb3b;
+  /*background-color: #ffeb3b;*/
   background-image: url("pictures/abstract-background-geometric-shapes-file-eps-format-34937275.jpg");
+  background-size: cover;
 }
 
 

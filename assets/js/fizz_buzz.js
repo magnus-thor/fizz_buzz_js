@@ -11,7 +11,6 @@ Fizz_buzz.prototype.zero_remainder = function(number, divisor) {
 };
 
 Fizz_buzz.prototype.normal_game = function(num) {
-  // for (var i = 1; i <= num; i++) {
     if (this.zero_remainder(num, 15)) {
       this.setMessage('FizzBuzz');
     }
@@ -24,5 +23,4 @@ Fizz_buzz.prototype.normal_game = function(num) {
     else {
       this.setMessage(num);
     }
-  // }
 };
