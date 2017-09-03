@@ -15,24 +15,18 @@ describe('Fizz_Buzz_UI - index.html', function() {
     jasmine.clock().uninstall();
   });
 
-  // it("causes a timeout to be called synchronously", function() {
-  // setTimeout(function() {
-  //   timerCallback();
-  // }, 100);
-  //
-  // expect(timerCallback).not.toHaveBeenCalled();
-  //
-  // jasmine.clock().tick(101);
-  //
-  // expect(timerCallback).toHaveBeenCalled();
-  //   });
-
   it('spyEvent', function() {
     spyEvent = spyOnEvent('#run_fizz', 'click');
     $("#number").val(1);
     $("#run_fizz").trigger("click");
     expect('click').toHaveBeenTriggeredOn('#run_fizz');
     expect(spyEvent).toHaveBeenTriggered();
+  });
+
+  it('a non Integer input', function() {
+    $("#number").val('abc');
+    $("#run_fizz").trigger("click");
+    expect($('#display_buzz').text()).toBe('Please enter an Integer');
   });
 
   it('runs Fizz_buzz(150) and receives FizzBuzz', function() {
@@ -50,13 +44,4 @@ describe('Fizz_Buzz_UI - index.html', function() {
     console.log(fizz.to_screen);
     expect($('#display_buzz').text()).toBe('1');
   });
-
-  // it("causes a timeout to be called", function() {
-  //   setInterval(function() {
-  //     timerCallback();
-  //   }, 500);
-  //   expect(timerCallback).not.toHaveBeenCalled();
-  //   jasmine.clock().tick(501);
-  //   expect(timerCallback).toHaveBeenCalled();
-  // });
 });

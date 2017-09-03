@@ -14,8 +14,8 @@ $(document).ready(function () {
         x++;
       }, 500);
     } else {
-        fizzbuzz.setMessage('Please enter an Integer');
-        $('#display_buzz').css("color", fizzbuzz.use_color).text(fizzbuzz.to_screen);
+      fizzbuzz.setMessage('Please enter an Integer');
+      $('#display_buzz').css("color", fizzbuzz.use_color).text(fizzbuzz.to_screen);
     }
   });
 

@@ -5,10 +5,6 @@ body{
   background-size: cover;
 }
 
-/*#display_buzz {
-  color: green;
-}*/
-
 h1 {
   color: #ffeb3b;
 }
@@ -25,8 +21,4 @@ h1 {
 .display_output {
   padding-top: 50px;
   font-size: 300%;
-}
-
-.logo {
-
 }
