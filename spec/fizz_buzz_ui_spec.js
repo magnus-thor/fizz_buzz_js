@@ -1,5 +1,4 @@
 describe('Fizz_Buzz_UI - index.html', function() {
-  let fizz;
   var spyEvent;
 
   beforeAll(function(done) {
@@ -13,7 +12,6 @@ describe('Fizz_Buzz_UI - index.html', function() {
     $.holdReady(false);
     timerCallback = jasmine.createSpy("timerCallback");
     jasmine.clock().install();
-    fizz = new Fizz_buzz();
   });
 
   afterEach(function() {

@@ -4,3 +4,7 @@
 A small website for the FizzBuzz game.
 
 # https://magnus-thor.github.io/fizz_buzz_js/
+
+
+# Author
+Magnús þór Ársælsson
