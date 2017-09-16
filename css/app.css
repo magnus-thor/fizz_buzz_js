@@ -1,29 +1,65 @@
 
-body{
+body {
   background-image: url("pictures/background1.jpg");
   background-size: cover;
-  back
 }
 
 h1 {
   color: #ffeb3b;
 }
 
+.wrapper {
+  width: 480px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
 .mybox {
+  grid-row: 2 / 3;
   width: 300px;
   border: 6px solid black;
   padding: 25px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.responsive-img {
+.logo .responsive-img {
   width: 25%;
+}
+
+.display_output {
+  grid-row: 3 / 4;
+  padding-top: 50px;
+  font-size: 300%;
+}
+
+.instructions .responsive-img {
+  grid-row: 1 / 2;
+  height: 300px;
+  width: 300px;
   background-size: 100% 100%;
 }
 
+@media screen and (min-width: 480px) {
 
-.display_output {
-  padding-top: 50px;
-  font-size: 300%;
+  .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 400px auto auto;
+    grid-template-rows: 100px 400px 100px;
+  }
+
+  .mybox {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+  }
+
+  /*.display_output {
+    grid-column: 2;
+    grid-row: 3;
+  }*/
+
+  .instructions {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
